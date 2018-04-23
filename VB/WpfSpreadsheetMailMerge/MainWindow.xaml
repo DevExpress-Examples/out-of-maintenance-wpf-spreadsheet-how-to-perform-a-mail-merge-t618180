@@ -1,0 +1,39 @@
+﻿<dx:ThemedWindow x:Class="WpfSpreadsheetMailMerge.MainWindow" mc:Ignorable="d" Title="Spreadsheet" Height="600" Width="800" 
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" 
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WpfSpreadsheetMailMerge" 
+    xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet" 
+    DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <Grid>
+        <dxsps:SpreadsheetControl x:Name="spreadsheetControl" CommandBarStyle="Ribbon" ShowFormulaBar="True"
+                                  DocumentSource="pack://application:,,,/WpfSpreadsheetMailMerge;component/MailMergeTemplate.xlsx">
+            <dxsps:SpreadsheetControl.RibbonActions>
+                <dxb:InsertAction Index="8">
+                    <dxr:RibbonPage x:Name="RibbonPage_MailMerge" Caption="Mail Merge" IsSelected="True"/>
+                </dxb:InsertAction>
+                <dxb:InsertAction ContainerName="RibbonPage_MailMerge">
+                    <dxr:RibbonPageGroup Caption="Mail Merge">
+                        <dxb:BarCheckItem x:Name="singleSheetCheckItem" Content="Single Sheet" GroupIndex="1"
+                                          Glyph="{dxsps:SpreadsheetSvgImage Name=SingleSheet.svg}"
+                                          Command ="{DXCommand Execute='SelectSingleSheetMode()', CanExecute='CanSelectMode()'}"/>
+                        <dxb:BarCheckItem x:Name="multipleSheetsCheckItem" Content="Multiple Sheets" GroupIndex="1"
+                                          Glyph="{dxsps:SpreadsheetSvgImage Name=MultipleSheets.svg}"
+                                          Command="{DXCommand Execute='SelectMultipleSheetsMode()', CanExecute='CanSelectMode()'}"
+                                          IsChecked="True"/>
+                        <dxb:BarCheckItem x:Name="multipleDocumentsCheckItem" Content="Multiple Documents" GroupIndex="1"
+                                          Glyph="{dxsps:SpreadsheetSvgImage Name=MultipleDocuments.svg}"
+                                          Command="{DXCommand Execute='SelectMultipleDocumentsMode()', CanExecute='CanSelectMode()'}"/>
+                        <dxb:BarButtonItem Content="Mail Merge Preview"
+                                           LargeGlyph="{dxsps:SpreadsheetSvgImage Name=MailMergePreview.svg}"
+                                           ItemClick="{DXEvent 'ShowPreview()'}"/>
+                    </dxr:RibbonPageGroup>
+                </dxb:InsertAction>
+            </dxsps:SpreadsheetControl.RibbonActions>
+        </dxsps:SpreadsheetControl>
+    </Grid>
+</dx:ThemedWindow>
