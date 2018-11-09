@@ -1,4 +1,4 @@
-﻿<dx:ThemedWindow x:Class="WpfSpreadsheetMailMerge.MainWindow" mc:Ignorable="d" Title="Spreadsheet" Height="600" Width="800" 
+<dx:ThemedWindow x:Class="WpfSpreadsheetMailMerge.MainWindow" mc:Ignorable="d" Title="Spreadsheet" Height="600" Width="800" 
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" 
     xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
