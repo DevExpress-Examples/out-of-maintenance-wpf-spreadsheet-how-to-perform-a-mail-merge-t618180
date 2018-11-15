@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [EmployeeInfo.cs](./CS/WpfSpreadsheetMailMerge/EmployeeInfo.cs) (VB: [EmployeeInfo.vb](./VB/WpfSpreadsheetMailMerge/EmployeeInfo.vb))
+* **[MainWindow.xaml](./CS/WpfSpreadsheetMailMerge/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSpreadsheetMailMerge/MainWindow.xaml))**
+* [MainWindow.xaml.cs](./CS/WpfSpreadsheetMailMerge/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/WpfSpreadsheetMailMerge/MainWindow.xaml))
+<!-- default file list end -->
 # WPF Spreadsheet - How to perform a mail merge
 
 
