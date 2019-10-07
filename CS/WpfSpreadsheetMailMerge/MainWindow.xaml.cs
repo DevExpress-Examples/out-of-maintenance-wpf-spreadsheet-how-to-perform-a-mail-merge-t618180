@@ -43,11 +43,11 @@ namespace WpfSpreadsheetMailMerge
             template.Cells["C9"].Formula = "FIELD(\"Notes\")";
 
             // Set a detail range in the template.
-            Range detail = template.Range["C1:C9"];
+            CellRange detail = template.Range["C1:C9"];
             detail.Name = "DETAILRANGE";
 
             // Set a header range in the template.
-            Range header = template.Range["B1:B9"];
+            CellRange header = template.Range["B1:B9"];
             header.Name = "HEADERRANGE";
 
             SetDefaultMailMergeOptions();
