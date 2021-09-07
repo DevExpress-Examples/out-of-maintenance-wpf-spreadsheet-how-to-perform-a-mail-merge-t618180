@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 16
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSpreadsheetMailMerge", "WpfSpreadsheetMailMerge\WpfSpreadsheetMailMerge.csproj", "{37EB0BC5-E976-4F9C-BF20-404DF52C8076}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSpreadsheetMailMerge", "WpfSpreadsheetMailMerge\WpfSpreadsheetMailMerge.Net5.csproj", "{37EB0BC5-E976-4F9C-BF20-404DF52C8076}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
